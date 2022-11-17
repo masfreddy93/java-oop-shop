@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class Prodotto {
 	
+	//dichiarazione variabili d'istanza
 	int codice;
 	String nome;
 	String descrizione;
@@ -12,6 +13,7 @@ public class Prodotto {
 	
 	Random r = new Random();
 	
+	//metodi
 	public Prodotto(String nome, String descrizione, int prezzo) {
 		
 		this.nome = nome;
@@ -25,6 +27,7 @@ public class Prodotto {
 		
 		System.out.println("Prezzo: " + prezzo);
 	}
+
 	float getPriceWithIva(){
 		
 		float priceWithIva = prezzo + (prezzo / 5f);
